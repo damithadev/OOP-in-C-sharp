@@ -10,7 +10,18 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            person person1 = new person();
+            person1.age = 10;
+
+            student student1 = new student();
+            student1.age = 20;                 
+            
+            //if you creating a object from student class, then u can access person class properties too,
+            //cuz person class is the parent class and student class is the child class.
+            //(child class can access parent class's properties)
+
+
+            Console.WriteLine(student1.age);
             Console.ReadKey();
         }
     }
